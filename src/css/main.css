@@ -30,3 +30,14 @@ body {
 .thumbnail-holder {
     min-width: 128px;
 }
+
+.generator {
+    @apply 
+        pl-1
+        pl-2
+        pl-3
+        pl-4
+        mb-2
+        mb-3
+        mb-4
+}
