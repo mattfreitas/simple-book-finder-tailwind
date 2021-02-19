@@ -97,13 +97,13 @@ function updateSearchResults(data) {
     resultsHolder.innerHTML = ''; // Clean the HTML
 
     data.forEach(function(item) {
+        let price;
         let volume = item.volumeInfo;
         let sale = item.saleInfo;
         let images = volume.imageLinks || { thumbnail: 'https://via.placeholder.com/128x182' };
         let publisher = volume.publisher;
         let publishedDate = volume.publishedDate || 'Desconhecido';
         let authors = volume.authors || ['Desconhecido'];
-        let price;
         let buyLink = sale.buyLink || 'loja-nao-encontrada';
         let templateViewMore = '', templatePricing = '';
 
