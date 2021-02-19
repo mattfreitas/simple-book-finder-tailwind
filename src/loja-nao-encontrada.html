@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Easy Book Finder</title>
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+
+    <body class="mb-10 px-5">
+        <nav class="bg-white shadow-sm text-center py-3 text-dark">Easy Book Finder</nav>
+
+        <h1 class="text-5xl font-bold text-center mt-20">Procure por livros rapidamente.</h1>
+        <p class="text-gray-400 text-center mt-5">Ideal para pesquisa de livros pagos e gratuitos pela internet.</p>
+        
+        <div class="mt-10 flex justify-center">
+            <div class="inline-block relative">
+                <input id="search-query" type="text" class="transition duration-200 focus:shadow-2xl px-6 pt-4 pb-3 bg-white shadow-xl w-96 max-w-full focus:outline-none rounded-full text-sm" placeholder="Escreva o nome do livro...">
+                <button id="search-button" class="rounded-full hover:bg-purple-500 bg-purple-600 flex text-sm text-white px-3 py-2 absolute right-0 top-0 mt-1 mr-2 shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="block w-full max-w-xl mx-auto flex-col">
+            <div class="h-3 w-3 relative mx-auto block mt-10">
+                <span class="flex h-6 w-6">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-purple-500"></span>
+                </span>
+            </div>
+            <p class="text-purple-600 text-center mt-2">Aguenta aí! Estamos procurando para você...</p>
+        </div>
+
+        <!-- Results -->
+        <div class="container mx-auto max-w-6xl hidden">
+            <section id="results">
+                <h2 class="text-4xl font-bold mt-20">Resultados</h2>
+                <p class="text-gray-500 mt-2 text-sm">Mostrando apenas <span id="results-shown-only" class="text-purple-600">0</span> resultados de <span id="results-shown-total" class="text-purple-600">0</span>.</p>
+            
+                <div id="results-data" class="mt-10">
+                    <!-- dynamic results -->
+                </div>
+            </section>
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

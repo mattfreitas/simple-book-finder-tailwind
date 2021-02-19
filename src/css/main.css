@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* purgecss start ignore */
+@tailwind  base;
+@tailwind  components;
+/* purgecss end ignore */
+
+@tailwind  utilities;
+
+
+body {
+    font-family: Inter;
+}
+
+.result-item {
+    @apply
+    /* default */
+    flex
+    flex-row 
+    mb-10 
+    transition 
+    duration-200 
+    p-5
+    rounded-lg
+
+    /* hover */
+    hover:bg-gray-50
+}
+
+.thumbnail-holder {
+    min-width: 128px;
+}
