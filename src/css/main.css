@@ -14,17 +14,17 @@ body {
 
 .result-item {
     @apply
-    /* default */
-    flex
-    flex-row 
-    mb-10 
-    transition 
-    duration-200 
-    p-5
-    rounded-lg
+        /* default */
+        flex
+        flex-row 
+        mb-10 
+        transition 
+        duration-200 
+        p-5
+        rounded-lg
 
-    /* hover */
-    hover:bg-gray-50
+        /* hover */
+        hover:bg-gray-50
 }
 
 .thumbnail-holder {
