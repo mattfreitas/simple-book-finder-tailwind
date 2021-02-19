@@ -34,6 +34,7 @@ let searchLoading = document.querySelector('#loading-search');
  * Search input handler.
  */
 let searchInput = document.querySelector('#search-query');
+searchInput.addEventListener('keydown', searchInputEnter);
 
 /**
  * Search button handler.
@@ -45,6 +46,20 @@ searchButton.addEventListener('click', performSearch);
  * Store the search results.
  */
 let searchResults;
+
+/**
+ * Listen to ENTER KEY press and call search.
+ * @return {Void}
+ */
+function searchInputEnter(e) {
+    let key = e.which || e.keyCode;
+
+    if(key == 13) {
+        search(searchInput.value)
+    }
+
+    return;
+}
 
 /**
  * Search for a book using Google API.
